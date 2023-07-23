@@ -1,0 +1,86 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.piano{
+    background-color: brown;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 500px;
+    height: 250px;
+
+}
+.piano .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.piano .title h2{
+    font-size: 20px;
+}
+
+.piano .title span{
+    font: 18px;
+    align-items: center;
+}
+.piano .title input{
+    margin-left: 10px;
+}
+.piano .piano-key{
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+}
+.piano .piano-key .white{
+    width: 60px;
+    height: 160px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    
+}
+.piano-key .key{
+    position: relative;
+    text-align: center;
+}
+.piano-key .key span{
+    color: red;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+}
+.piano .piano-key .white.active{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.piano .piano-key .black{
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    margin: 0 -20px 0 -20px;
+    z-index: 2;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.piano .piano-key .black.active{
+    
+    background-color: rgb(27, 26, 26);
+}
+
+
+
+
