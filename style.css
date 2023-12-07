@@ -81,6 +81,12 @@ body{
     background-color: rgb(27, 26, 26);
 }
 
+@media (max-width: 600px) {
+    .piano{
+        transform: rotate(270deg);
+    }
+}
+
 
 
 
